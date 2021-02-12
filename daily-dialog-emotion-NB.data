@@ -1,0 +1,17 @@
+predicates:
+  UttEmo/2: open
+  LocalPred/2: closed
+  WhatISaid/2: closed
+  WhatYouSaid/2: closed
+
+observations:
+  UttEmo : Train/UttEmo.txt
+  LocalPred : Train/LocalPred_NB.txt
+  WhatISaid : Train/WhatISaid.txt
+  WhatYouSaid : Train/WhatYouSaid.txt
+
+targets:
+  UttEmo : Eval/UttEmo_targets.txt
+
+truth:
+  UttEmo : Eval/UttEmo_targets.txt
