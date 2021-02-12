@@ -1,5 +1,5 @@
 1: !UttEmo(S, E)
-20: LocalPred(S, E) = UttEmo(S, E) ^2
+50: LocalPred(S, E) = UttEmo(S, E) ^2
 
-10: WhatISaid(S0, S1) & UttEmo(S1, E) -> UttEmo(S0, E) ^2
-5: WhatYouSaid(S0, S1) & UttEmo(S1, E) -> UttEmo(S0, E) ^2
+10: WhatISaid(S0, S1) & UttEmo(S1, E) & (E != 'no_emotion') -> UttEmo(S0, E) ^2
+5: WhatYouSaid(S0, S1) & UttEmo(S1, E) & (E != 'no_emotion') -> UttEmo(S0, E) ^2
