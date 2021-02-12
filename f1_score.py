@@ -1,3 +1,7 @@
+# Requires scikit-learn
+# Run: python3 f1_score.py <PSL predictions> <PSL ground truths>
+#
+#
 import collections
 import sys
 from sklearn.metrics import f1_score, confusion_matrix
